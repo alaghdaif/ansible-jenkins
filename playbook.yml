@@ -1,8 +1,7 @@
 
-- name: install nginx
+- name: Ping Webserver
   hosts: all
   become: yes
-  roles:
-    - nginx
-
+  tasks:
+    - action: ping
 
